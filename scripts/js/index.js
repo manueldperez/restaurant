@@ -21,12 +21,3 @@ const navSlide = () => {
     });
 }
 navSlide();
-
-var shiftWindow = () => { 
-    scrollBy(0, -47) 
-};
-window.addEventListener("hashchange", shiftWindow);
-
-function load() {
-    if (window.location.hash) shiftWindow(); 
-}

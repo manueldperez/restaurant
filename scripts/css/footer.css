@@ -1,0 +1,12 @@
+.footer {
+    min-height: 10vh;
+    padding-top: 1%;
+}
+.footer .container {
+    display: flex;
+    justify-content: center;
+}
+.footer a {
+    color: #5f565e;
+    font-size: 30px;
+}

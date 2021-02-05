@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Nanum Gothic', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     padding-top: 5vh;
 }
@@ -57,7 +60,7 @@ body {
     padding-right: 0;
 }
 .nav-links i {
-    font-size: 20px;
+    font-size: 16px;
 }
 .circle {
     display: inline;
