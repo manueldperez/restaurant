@@ -55,4 +55,8 @@
     .slide {
         width: 100%;
     }
+    .photos {
+        scroll-margin-top: unset;
+        scroll-padding-top: 6vh;
+    }
 }
