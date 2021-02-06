@@ -8,18 +8,22 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    padding-top: 5vh;
+    /* padding-top: 5vh; */
+}
+::-webkit-scrollbar {
+    display: none;
 }
 .nav-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: minmax(5vh, auto);
+    grid-template-rows: minmax(6vh, auto);
     align-items: center;
     box-shadow: 0 0 15px #666666;
     background-color: beige;
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 3;
 }
 .logo {
     padding-left: 15%;

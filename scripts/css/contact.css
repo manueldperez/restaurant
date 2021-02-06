@@ -1,5 +1,6 @@
 .contact {
-    background-color: red;
+    background-color: beige;
     min-height: 70vh;
-    padding-top: 5vh;
+    box-shadow: 0 20px 15px -18px #666666;
+    scroll-margin-top: 6vh;
 }

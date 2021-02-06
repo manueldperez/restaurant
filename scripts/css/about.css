@@ -1,5 +1,5 @@
 .about {
-    background-color: yellow;
+    background-color: beige;
     min-height: 50vh;
-    padding-top: 5vh;
+    scroll-margin-top: 6vh;
 }
