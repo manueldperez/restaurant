@@ -1,7 +1,6 @@
 .menu {
     background-color: beige;
     min-height: 50vh;
-    /* scroll-margin-top: 6vh; */
     padding-top: 6vh;
     margin-top: -6vh;
 }
@@ -9,10 +8,4 @@
     touch screen devices
 ***************************/
 @media screen and (max-width:1060px) {
-    .menu {
-        scroll-margin-top: unset;
-        padding-top: 6vh;
-        margin-top: -6vh;
-        /* scroll-padding-top: 6vh; */
-    }
 }

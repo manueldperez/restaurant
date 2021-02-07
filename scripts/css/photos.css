@@ -1,7 +1,6 @@
 .photos {
     background-color: beige;
     text-align: -webkit-center;
-    /* scroll-margin-top: 6vh; */
     padding-top: 6vh;
     margin-top: -6vh;
 }
@@ -11,14 +10,24 @@
 }
 .slider-container {
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 .slider-container::after {
     content: '';
     padding-top: 100%;
 }
 .slide {
+    position: absolute;
     width: 75%;
-    /* position: absolute; */
+    opacity: 0;
+    /* clip-path: circle(10% at 50% 50%); */
+}
+.active {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    /* clip-path: circle(150% at 50% 50%); */
+    /* transition: clip-path 0.5s ease-in; */
 }
 .image {
     width: 100%;
@@ -41,14 +50,17 @@
 }
 .navigation-container .navigation .button {
     z-index: 2;
-    background: rgb(255, 255, 255);
-    border: solid 1px rgba(150, 150, 150, 0.5);
-    width: 15px;
-    height: 15px;
+    border: solid 2px rgb(254, 255, 204);
+    width: 18px;
+    height: 18px;
     margin-top: auto;
     margin: 10px;
     border-radius: 50%;
     cursor: pointer;
+}
+.navigation-container .navigation .button:hover {
+    background: rgb(254, 255, 204);
+    transition: background 0.25s ease-in-out;
 }
 /**************************
     touch screen devices
@@ -57,10 +69,9 @@
     .slide {
         width: 100%;
     }
-    .photos {
-        scroll-margin-top: unset;
-        padding-top: 6vh;
-        margin-top: -6vh;
-        /* scroll-padding-top: 6vh; */
+    .navigation-container .navigation .button {
+        background: rgb(254, 255, 204);
+        width: 13px;
+        height: 13px;
     }
 }

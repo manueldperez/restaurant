@@ -1,18 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Nanum Gothic', sans-serif;
-}
-html {
-    scroll-behavior: smooth;
-}
-body {
-    /* padding-top: 5vh; */
-}
-::-webkit-scrollbar {
-    display: none;
-}
+
 .nav-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
