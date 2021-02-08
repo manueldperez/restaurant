@@ -1,9 +1,7 @@
+// function to calculate the height of slideshow
 function sliderheight() {
-    
     const clientHeight = document.getElementById('slide').clientHeight;
-
     document.getElementById("slide-container").style.height = `${clientHeight}px`;
-
     window.addEventListener("resize", sliderheight);
 }
 sliderheight();
@@ -38,7 +36,7 @@ manualNav(currSlide);
 
 const repeat = () => {
     let curr = null;
-    if (currSlide == slides.length) {
+    if (currSlide == 4) {
         curr = currSlide;
     }
     else {
