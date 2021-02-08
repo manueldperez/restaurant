@@ -24,7 +24,7 @@
 }
 .active {
     opacity: 1;
-    transition: opacity 1.5s ease-in-out;
+    transition: opacity 1s ease-in-out;
     animation: trans 5s ease-in-out;
     background:rgba(254, 255, 204, 1) !important;
 }

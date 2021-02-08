@@ -11,6 +11,7 @@ sliderheight();
 const slides = document.querySelectorAll('.slide');
 const buttons = document.querySelectorAll('.button');
 let currSlide = 0;
+var timer;
 
 const manualNav = (man) => {
     slides.forEach((slide) => {
@@ -28,17 +29,19 @@ const manualNav = (man) => {
         button.addEventListener('click', () => {
             manualNav(curr);
             currSlide = curr;
+            clearTimeout(timer);
+            repeat();
         });
     });
 }
-manualNav(0);
+manualNav(currSlide);
 
-const repeat = (actClass) => {
+const repeat = () => {
     let active = document.getElementsByClassName('active');
-    let curr = 0;
+    let curr =  currSlide + 1;
 
-    const repeater = () => {
-        setTimeout(() => {
+    const repeater = (next) => {
+        timer = setTimeout(() => {
             [...active].forEach((activeSlide) => {
                 activeSlide.classList.remove('active');
             });
