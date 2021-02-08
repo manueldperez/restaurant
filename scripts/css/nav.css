@@ -71,9 +71,6 @@
     touch screen devices
 ***************************/
 @media screen and (max-width:1060px) {
-    /* html {
-        scroll-behavior: unset;
-    } */
     .nav-container {
         grid-template-columns: 6fr 1fr;
     }
