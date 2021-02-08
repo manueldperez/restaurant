@@ -26,6 +26,7 @@
 .active {
     opacity: 1;
     transition: opacity 1s ease-in-out;
+    background:rgba(254, 255, 204, 1) !important;
     /* clip-path: circle(150% at 50% 50%); */
     /* transition: clip-path 0.5s ease-in; */
 }
@@ -50,10 +51,10 @@
 }
 .navigation-container .navigation .button {
     z-index: 2;
-    border: solid 2px rgb(254, 255, 204);
+    background: rgb(165 162 138 / 15%);
+    border: solid 1px rgb(254, 255, 204);
     width: 18px;
     height: 18px;
-    margin-top: auto;
     margin: 10px;
     border-radius: 50%;
     cursor: pointer;
@@ -70,7 +71,6 @@
         width: 100%;
     }
     .navigation-container .navigation .button {
-        background: rgb(254, 255, 204);
         width: 13px;
         height: 13px;
     }
