@@ -38,7 +38,7 @@ manualNav(currSlide);
 
 const repeat = () => {
     let curr = null;
-    if (currSlide == 4) {
+    if (currSlide == slides.length) {
         curr = currSlide;
     }
     else {

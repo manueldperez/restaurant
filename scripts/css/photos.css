@@ -72,6 +72,9 @@
         width: 13px;
         height: 13px;
     }
+    .navigation-container .navigation .button:hover {
+        background: unset;
+    }
 }
 /********************* 
     for javascript 
