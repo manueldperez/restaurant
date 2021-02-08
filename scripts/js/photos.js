@@ -21,7 +21,6 @@ const manualNav = (man) => {
             button.classList.remove('active');
         });
     });
-
     slides[man].classList.add('active');
     buttons[man].classList.add('active');
 
@@ -29,6 +28,7 @@ const manualNav = (man) => {
         button.addEventListener('click', () => {
             manualNav(curr);
             currSlide = curr;
+            console.log(`currSlide: ${currSlide}`);
             clearTimeout(timer);
             repeat();
         });
@@ -37,24 +37,31 @@ const manualNav = (man) => {
 manualNav(currSlide);
 
 const repeat = () => {
-    let active = document.getElementsByClassName('active');
-    let curr =  currSlide + 1;
-
-    const repeater = (next) => {
+    let curr = null;
+    if (currSlide == 4) {
+        curr = currSlide;
+    }
+    else {
+        curr = currSlide + 1;
+    }
+    const repeater = () => {
         timer = setTimeout(() => {
-            [...active].forEach((activeSlide) => {
-                activeSlide.classList.remove('active');
+            slides.forEach((slide) => {
+                slide.classList.remove('active');
+        
+                buttons.forEach((button) => {
+                    button.classList.remove('active');
+                });
             });
-            slides[curr].classList.add('active');
-            buttons[curr].classList.add('active');
-            curr++;
-
             if (slides.length == curr) {
                 curr = 0;
             }
             if (curr >= slides.length) {
                 return;
             }
+            slides[curr].classList.add('active');
+            buttons[curr].classList.add('active');
+            curr++;
             repeater();
         }, 5000);
     }
