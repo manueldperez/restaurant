@@ -2,19 +2,22 @@
     background-color: beige;
     padding-top: 6vh;
     margin-top: -6vh;
+    min-height: 100vh;
 }
 .menu-container {
     text-align: center;
 }
 .items-list {
-    display: inline-block;
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .items-list li {
     display: grid;
     grid-template-columns: 1fr 3fr;
     padding: 1rem;
-    margin-bottom: 0.3rem;
-    border: solid 1px #666666;
+    margin-bottom: 0.5rem;
+    /* border: solid 1px #666666; */
     /* background: rgb(255,242,248);
     background: radial-gradient(circle, rgba(255,242,248,1) 0%, rgba(207,229,255,1) 100%); */
 }
@@ -42,7 +45,13 @@
 /**************************
     touch screen devices
 ***************************/
+/* 1315 */
 @media screen and (max-width:1060px) {
+    .items-list {
+        display: unset;
+    }
+}
+@media screen and (max-width:750px) {
     .text p:before, .text span:before {
         content: unset;
         margin: unset;

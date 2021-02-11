@@ -63,10 +63,11 @@ button {
     text-align: center;
     cursor: pointer;
     margin-top: 0.5rem;
+    background-color: rgba(160, 160, 160, 0.2);
     transition: background-color 0.3s ease-in-out;
 }
 button:hover {
-    background-color: rgba(120, 120, 120, 0.2);
+    background-color: rgba(90, 90, 90, 0.2);
 }
 #status {
     max-width: 500px;
