@@ -74,6 +74,9 @@
     touch screen devices
 ***************************/
 @media screen and (max-width:1060px) {
+    .photos {
+        padding-bottom: unset;
+    }
     .slide {
         width: 100%;
     }
