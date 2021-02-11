@@ -2,13 +2,12 @@
     background-color: beige;
     padding-top: 6vh;
     margin-top: -6vh;
-    min-height: 100vh;
 }
 .menu-container {
     text-align: center;
 }
 .items-list {
-    padding-top: 1rem;
+    padding-top: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
