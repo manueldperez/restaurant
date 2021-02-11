@@ -2,11 +2,128 @@
     background-color: beige;
     min-height: 70vh;
     box-shadow: 0 20px 15px -18px #666666;
-    padding-top: 6vh;
+    padding-top: 8vh;
     margin-top: -6vh;
+}
+h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    padding-bottom: 5rem;
+}
+.form {
+    width: 90%;
+    max-width: 500px;
+    margin-left: 10%;
+    padding: 2rem;
+    box-shadow: 0 0 1rem #5f565e;
+    border-radius: 5%;
+    margin-bottom: 1rem;
+}
+.form-group.first, .form-group.last {
+    width: 50%;
+    display: table-cell;
+}
+.form-group.last {
+    padding-left: 5%;
+}
+.form-group {
+    width: 100%;
+    margin-top: 1rem;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid rgba(120, 120, 120, 0.3);
+    margin-top: 0.2rem;
+}
+.form-group.first input {
+    width: 95%;
+}
+textarea {
+    resize: vertical;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+button {
+    width: 30%;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background-color 0.3s ease-in-out;
+}
+button:hover {
+    background-color: rgba(120, 120, 120, 0.2);
+}
+#status {
+    max-width: 500px;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    letter-spacing: 1px;
+}
+.text-container {
+    text-align: center;
+    align-self: center;
+    padding: 1rem 0;
+}
+.text-container p {
+    font-size: 1.5rem;
+}
+.contact-container .text-container p {
+    padding: 1rem;
 }
 /**************************
     touch screen devices
 ***************************/
 @media screen and (max-width:1060px) {
+    button:hover {
+        background-color: unset;
+    }
+    button {
+        background-color: rgba(120, 120, 120, 0.2);
+    }
+    .contact-container {
+        grid-template-columns: unset;
+    }
+    .contact-container > .text-container {
+        grid-row: 1;
+    }
+    .form {
+        margin: 0 auto;
+    }
+}
+#status.success {
+    animation: status 2s ease forwards;
+}
+#status.error {
+    animation: status 2s ease forwards;
+}
+@keyframes status {
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
 }

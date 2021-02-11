@@ -1,12 +1,16 @@
 .footer {
-    min-height: 10vh;
     background-color: rgba(245, 245, 220, 0.5);
 }
 .footer .container {
+    min-height: 100px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-.footer a {
+.container a {
     color: #5f565e;
     font-size: 30px;
+}
+.container i {
+
 }

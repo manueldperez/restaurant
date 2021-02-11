@@ -26,10 +26,6 @@
     align-items: center;
     justify-content: center;
 }
-.text .name, .ingredients, .price {
-    display: flex;
-    justify-content: center;
-}
 .text p:before, .text span:before {
     content: "\2014";
     margin: 0 10px;
