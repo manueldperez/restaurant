@@ -17,3 +17,8 @@ html {
     font-style: italic;
     padding: 1rem 0 1rem 0;
 }
+.text-container {
+    text-align: center;
+    align-self: center;
+    padding: 1rem 0;
+}

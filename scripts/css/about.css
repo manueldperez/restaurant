@@ -56,4 +56,7 @@
     .about-container > .photo-container {
         grid-row: 1;
     }
+    .text-container {
+        text-align: center;
+    }
 }

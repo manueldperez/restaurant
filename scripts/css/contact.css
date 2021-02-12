@@ -2,14 +2,12 @@
     background-color: beige;
     min-height: 70vh;
     box-shadow: 0 20px 15px -18px #666666;
-    padding-top: 8vh;
+    padding-top: 6vh;
     margin-top: -6vh;
 }
-h3 {
-    text-align: center;
+h1 {
     margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
 }
 .contact-container {
     display: grid;
@@ -77,10 +75,8 @@ button:hover {
     border-radius: 0.5rem;
     letter-spacing: 1px;
 }
-.text-container {
-    text-align: center;
-    align-self: center;
-    padding: 1rem 0;
+.contact-container .text-container {
+    padding-bottom: 1rem;
 }
 .text-container p {
     font-size: 1.5rem;
