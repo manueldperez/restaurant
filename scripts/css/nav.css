@@ -1,11 +1,10 @@
-
 .nav-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: minmax(6vh, auto);
     align-items: center;
     box-shadow: 0 0 15px #666666;
-    background-color: beige;
+    background-color: white;
     width: 100%;
     position: fixed;
     top: 0;
@@ -127,7 +126,7 @@
     right: -10px;
     height: 45vh;
     top: 6vh;
-    background-color: beige;
+    background-color: white;
     border-radius: 1vh;
     z-index: 1;
     display: flex;

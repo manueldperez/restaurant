@@ -1,5 +1,11 @@
 .photos {
-    background-color: beige;
+    /* background-color: beige; */
+    /* background-color: snow; */
+    background: rgb(245,245,245);
+    background: -moz-linear-gradient(90deg, rgba(245,245,245,1) 0%, rgba(248,253,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(245,245,245,1) 0%, rgba(248,253,255,1) 100%);
+    background: linear-gradient(90deg, rgba(245,245,245,1) 0%, rgba(248,253,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f5f5f5",endColorstr="#f8fdff",GradientType=1);
     text-align: -webkit-center;
     padding-top: 6vh;
     margin-top: -6vh;
@@ -27,7 +33,11 @@
     opacity: 1;
     transition: opacity 1s ease-in-out;
     animation: trans 5s ease-in-out;
-    background:beige !important;
+    background: rgb(245,245,245) !important;
+    background: -moz-linear-gradient(90deg, rgba(245,245,245,1) 0%, rgba(248,253,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(245,245,245,1) 0%, rgba(248,253,255,1) 100%);
+    background: linear-gradient(90deg, rgba(245,245,245,1) 0%, rgba(248,253,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f5f5f5",endColorstr="#f8fdff",GradientType=1);
 }
 .image {
     width: 100%;
@@ -50,8 +60,9 @@
 }
 .navigation-container .navigation .button {
     z-index: 2;
-    background: rgb(165 162 138 / 15%);
-    border: solid 1px rgb(254, 255, 204);
+    /* background: rgb(165 162 138 / 15%); */
+    /* border: solid 1px rgb(254, 255, 204); */
+    border: solid 1px snow;
     width: 18px;
     height: 18px;
     margin: 10px;
@@ -59,7 +70,7 @@
     cursor: pointer;
 }
 .navigation-container .navigation .button:hover {
-    background: rgb(254, 255, 204);
+    background: snow;
     transition: background 0.25s ease-in-out;
 }
 .down {
