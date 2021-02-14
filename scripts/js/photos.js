@@ -26,7 +26,6 @@ const manualNav = (man) => {
         button.addEventListener('click', () => {
             manualNav(curr);
             currSlide = curr;
-            console.log(`currSlide: ${currSlide}`);
             clearTimeout(timer);
             repeat();
         });

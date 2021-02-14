@@ -22,3 +22,12 @@ html {
     align-self: center;
     padding: 1rem 0;
 }
+.down {
+    padding: 0 0 2.5vh 0;
+    min-height: 3vh;
+    text-align: center;
+}
+.down i {
+    font-size: 1.5rem;
+    color: black;
+}

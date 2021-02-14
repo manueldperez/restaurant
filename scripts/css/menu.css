@@ -1,9 +1,6 @@
 .menu {
-    background: rgb(245,245,245);
-    background: -moz-linear-gradient(90deg, rgba(245,245,245,1) 0%, rgba(248,253,255,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(245,245,245,1) 0%, rgba(248,253,255,1) 100%);
-    background: linear-gradient(90deg, rgba(245,245,245,1) 0%, rgba(248,253,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f5f5f5",endColorstr="#f8fdff",GradientType=1);
+    background-color: #deffe2;
+    background-image: linear-gradient(90deg, #deffe2 25%, #b5f0ff 100%);
     padding-top: 6vh;
     margin-top: -6vh;
 }
@@ -30,7 +27,8 @@
 .text {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
+    justify-self: center;
+    width: fit-content;
 }
 .text p:before, .text span:before {
     content: "\2014";
@@ -43,15 +41,36 @@
 .item img {
     height: fit-content;
     max-height: 20vh;
+    justify-self: center;
 }
 
 /**************************
     touch screen devices
 ***************************/
 /* 1315 */
+@media screen and (max-width:1250px) {
+    .text {
+        display: inline-grid;
+    }
+    .text p:before, .text span:before {
+        content: unset;
+        margin: unset;
+    }
+}
 @media screen and (max-width:1060px) {
     .items-list {
         display: unset;
+    }
+    .items-list li {
+        grid-template-columns: 1fr 2fr;
+    }
+    .text {
+        display: inline-flex;
+        align-items: center;
+    }
+    .text p:before, .text span:before {
+        content: "\2014";
+        margin: 0 10px;
     }
 }
 @media screen and (max-width:750px) {
@@ -66,7 +85,5 @@
     }
     .text {
         display: inline-grid;
-        width: max-content;
-        justify-self: center;
     }
 }
