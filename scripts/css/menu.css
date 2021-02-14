@@ -17,9 +17,6 @@
     grid-template-columns: 1fr 3fr;
     padding: 1rem;
     margin-bottom: 0.5rem;
-    /* border: solid 1px #666666; */
-    /* background: rgb(255,242,248);
-    background: radial-gradient(circle, rgba(255,242,248,1) 0%, rgba(207,229,255,1) 100%); */
 }
 .item .name:nth-child(1) {
     padding-left: unset;
@@ -43,11 +40,9 @@
     max-height: 20vh;
     justify-self: center;
 }
-
 /**************************
     touch screen devices
 ***************************/
-/* 1315 */
 @media screen and (max-width:1250px) {
     .text {
         display: inline-grid;

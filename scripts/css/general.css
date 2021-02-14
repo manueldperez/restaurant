@@ -7,7 +7,14 @@
 html {
     overflow-x: hidden;
 }
+.hide-scrollbar {
+    /*FireFox*/
+    scrollbar-width: none;
+    /*IE10+*/
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
 ::-webkit-scrollbar {
+    /*Chrome, Safari, Edge*/
     display: none;
 }
 .title {
