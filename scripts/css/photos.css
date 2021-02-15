@@ -63,6 +63,9 @@
     background-color: #deffe2;
     transition: background 0.25s ease-in-out;
 }
+.photos .down {
+    padding: 0 0 3vh 0;
+}
 /**************************
     touch screen devices
 ***************************/

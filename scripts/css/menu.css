@@ -22,63 +22,57 @@
     padding-left: unset;
 }
 .text {
-    display: inline-flex;
+    display: inline-grid;
     align-items: center;
     justify-self: center;
     width: fit-content;
 }
-.text p:before, .text span:before {
-    content: "\2014";
-    margin: 0 10px;
+.ingredients {
+    padding: 3%;
 }
 .name {
     font-size: 1.5rem;
     font-weight: bold;
 }
-.item img {
+.name h5 {
+    text-transform: uppercase;
+}
+.photo-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
     height: fit-content;
-    max-height: 20vh;
+    align-self: center;
+}
+.photo-container::after {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+.img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
     justify-self: center;
+}
+.menu .down {
+    padding: 1vh 0 3vh 0;
 }
 /**************************
     touch screen devices
 ***************************/
-@media screen and (max-width:1250px) {
-    .text {
-        display: inline-grid;
-    }
-    .text p:before, .text span:before {
-        content: unset;
-        margin: unset;
-    }
-}
 @media screen and (max-width:1060px) {
     .items-list {
         display: unset;
     }
     .items-list li {
         grid-template-columns: 1fr 2fr;
-    }
-    .text {
-        display: inline-flex;
-        align-items: center;
-    }
-    .text p:before, .text span:before {
-        content: "\2014";
-        margin: 0 10px;
-    }
-}
-@media screen and (max-width:750px) {
-    .text p:before, .text span:before {
-        content: unset;
-        margin: unset;
-    }
-    .item img {
-        height: 20vh;
-        display: block;
-        float: left;
-    }
-    .text {
-        display: inline-grid;
     }
 }
