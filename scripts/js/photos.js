@@ -1,3 +1,8 @@
+window.addEventListener('load', () => {
+    const clientHeight = document.getElementById('slide').clientHeight;
+    document.getElementById("slide-container").style.height = `${clientHeight}px`;
+})
+
 // function to calculate the height of slideshow
 function sliderheight() {
     const clientHeight = document.getElementById('slide').clientHeight;
