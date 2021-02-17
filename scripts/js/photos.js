@@ -1,6 +1,7 @@
 window.addEventListener('load', () => {
     const clientHeight = document.getElementById('slide').clientHeight;
     document.getElementById("slide-container").style.height = `${clientHeight}px`;
+    document.getElementById("slide-container").style.transition = 'all .2s ease-in-out';
 })
 
 // function to calculate the height of slideshow
@@ -8,6 +9,9 @@ function sliderheight() {
     const clientHeight = document.getElementById('slide').clientHeight;
     document.getElementById("slide-container").style.height = `${clientHeight}px`;
     window.addEventListener("resize", sliderheight);
+    if (document.getElementById("slide-container").style.transition !== null) {
+        document.getElementById("slide-container").style.transition = null;
+    }
 }
 sliderheight();
 
