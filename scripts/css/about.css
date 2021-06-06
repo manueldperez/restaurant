@@ -1,65 +1,63 @@
 .about {
-    background-color: #deffe2;
-    background-image: linear-gradient(90deg, #deffe2 25%, #b5f0ff 100%);
-    padding-top: 6vh;
-    margin-top: -6vh;
+  padding-top: 6vh;
+  margin-top: -6vh;
 }
 .about-container {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    align-items: center;
-    justify-items: center;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  justify-items: center;
 }
 .about-container .photo-container {
-    position: relative;
-    max-width: 30rem;
-    width: 100%;
-    height: auto;
+  position: relative;
+  max-width: 30rem;
+  width: 100%;
+  height: auto;
 }
 .about-container .photo-container::after {
-    content: '';
-    display: block;
-    padding-top: 100%;
+  content: '';
+  display: block;
+  padding-top: 100%;
 }
 .about-container .photo {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
 }
 .about-container .photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
 }
 .about-container .text-container p {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 .text-container {
-    text-align: left;
-    width: 100%;
-    max-width: 60rem;
-    letter-spacing: 1px;
-    line-height: 2.5rem;
-    padding: 0 5%;
+  text-align: left;
+  width: 100%;
+  max-width: 60rem;
+  letter-spacing: 1px;
+  line-height: 2.5rem;
+  padding: 0 5%;
 }
 .about-container > .text-container {
-    grid-row: 1;
+  grid-row: 1;
 }
 /**************************
     touch screen devices
 ***************************/
-@media screen and (max-width:1060px) {
-    .about-container {
-        display: flex;
-        flex-direction: column;
-    }
-    .about-container > .photo-container {
-        grid-row: 1;
-    }
-    .text-container {
-        text-align: center;
-    }
+@media screen and (max-width: 1060px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-container > .photo-container {
+    grid-row: 1;
+  }
+  .text-container {
+    text-align: center;
+  }
 }
